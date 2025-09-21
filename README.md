@@ -1,54 +1,73 @@
-Weather Prediction with SVM and Random Forest
+# 🌦️ Weather Prediction with SVM and Random Forest
 
-This repository contains code and data for predicting weather conditions based on meteorological features in Sri Lanka. We’ll use the SVM and Random Forest algorithms to tackle this task.
+This project focuses on **predicting weather conditions in Sri Lanka** using machine learning models. We leverage **Support Vector Machines (SVM)** and **Random Forests** to classify weather based on meteorological features.  
 
-Problem Definition
-Task (T): Predicting the weather according to climate conditions.
-Experience (E): Meteorological data and weather-related features of Sri Lanka.
-Performance Measure (P): Accuracy, Multiclass log loss.
+The goal is to enhance **climate insights** through data-driven approaches, supporting better weather understanding and forecasting.
 
-Data
+---
 
-Data Source: Sri Lanka Weather Dataset on Kaggle
+## 📌 Problem Definition
 
-Features:
-Time
-Weather Code
-Maximum Temperature
-Minimum Temperature
-Mean 2-meter Temperature
-Maximum Apparent Temperature
-Minimum Apparent Temperature
-Mean Apparent Temperature
-Sunrise Time
-Sunset Time
-Total Shortwave Radiation
-Total Precipitation
-Total Rainfall
-Total Snowfall
-Precipitation Hours
-Maximum Wind Speed
-Maximum Wind Gusts
-Dominant Wind Direction
-Reference Evapotranspiration
-Latitude
-Longitude
-Elevation
-Country
-City
+- **Task (T):** Predicting weather conditions from climate features  
+- **Experience (E):** Historical meteorological data from Sri Lanka  
+- **Performance Measure (P):** Accuracy, Multiclass Log Loss  
 
-Number of Features: 24
-Dataset Size: 147,486 records
+---
 
-Handling Missing Data
-Missing data will be handled by imputation or exclusion based on the number of missing values:
-For numerical values, mean imputation will be used.
-For categorical values, mode imputation will be applied.
+## 📊 Dataset
 
-Algorithms
-  a. Algorithms
-Support Vector Machines (SVM)
-Random Forest
-  b. Availability in Libraries
+- **Source:** [Sri Lanka Weather Dataset – Kaggle](https://www.kaggle.com)  
+- **Records:** 147,486  
+- **Features:** 24 (climate & geographical attributes)  
 
-Both algorithms are readily available in the scikit-learn library for Python
+**Key Features:**
+- Weather Code, Time, Sunrise, Sunset  
+- Maximum / Minimum / Mean Temperature  
+- Apparent Temperatures  
+- Precipitation, Rainfall, Snowfall  
+- Radiation & Evapotranspiration  
+- Wind Speed, Gusts, Direction  
+- Latitude, Longitude, Elevation, City, Country  
+
+---
+
+## 🧹 Data Preprocessing
+
+- **Handling Missing Data:**  
+  - Numerical → *Mean Imputation*  
+  - Categorical → *Mode Imputation*  
+- **Feature Scaling & Encoding** applied as needed for model compatibility  
+
+---
+
+## 🤖 Machine Learning Models
+
+We used two powerful algorithms from **Scikit-learn**:
+
+1. **Support Vector Machines (SVM)**  
+   - Effective for high-dimensional data  
+   - Works well with complex decision boundaries  
+
+2. **Random Forest**  
+   - Ensemble learning technique  
+   - Robust to noise & handles large datasets efficiently  
+
+---
+
+## 📈 Performance Metrics
+
+- **Accuracy** – percentage of correctly predicted weather conditions  
+- **Multiclass Log Loss** – evaluates predictive probabilities  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Programming Language:** Python  
+- **Libraries:**  
+  - `scikit-learn` – Machine Learning  
+  - `pandas` – Data Handling  
+  - `numpy` – Numerical Computation  
+  - `matplotlib`, `seaborn` – Visualization  
+
+
